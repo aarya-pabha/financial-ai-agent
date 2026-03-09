@@ -1,0 +1,13 @@
+altair
+pandas
+streamlit
+openai
+pinecone-client
+yfinance
+pandas
+pydantic
+llama-index-core
+llama-index-llms-openai
+llama-index-embeddings-openai
+llama-index-program-openai
+llama-index-vector-stores-pinecone
