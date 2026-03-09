@@ -1,0 +1,12 @@
+# Security
+.env
+.streamlit/secrets.toml
+
+# Python Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+env/
