@@ -25,7 +25,7 @@ financial-ai-agent/
 │   └── phase3_ragas_scores_adjusted.csv   # Final Ragas scores correcting for honest refusals
 │
 ├── notebooks/                             
-│   └── Financial_Agent_Architecture.ipynb # Complete logic, architecture, and Ragas evaluation flow
+│   └── Financial_RAG.ipynb # Complete logic, architecture, and Ragas evaluation flow
 │
 └── README.md                              # Project documentation
 ```
