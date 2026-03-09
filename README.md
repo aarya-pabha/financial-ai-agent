@@ -1,17 +1,34 @@
-🏛️ Wall St. AI Analyst: Hybrid RAG & Live Market Data Agent
-============================================================
+# 🏛️ Wall St. AI Analyst: Hybrid RAG & Live Market Data Agent
 
-🚀 Live Interactive Demo
-------------------------
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![LlamaIndex](https://img.shields.io/badge/LlamaIndex-0.10+-black.svg)](https://www.llamaindex.ai/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-gpt--4o--mini-green.svg)](https://openai.com/)
 
+## 🚀 Live Interactive Demo
 **Interact with the deployed agent here:** [Wall St. AI Analyst on Hugging Face Spaces](https://huggingface.co/spaces/Aarya003/Financial-Analyst-Agent)
 
-📌 Project Overview
--------------------
-
-Standard Retrieval-Augmented Generation (RAG) applications fail in the financial sector because they attempt to extract highly volatile, real-time numbers (like stock prices or PE ratios) from static, outdated PDF documents.
+## 📌 Project Overview
+Standard Retrieval-Augmented Generation (RAG) applications fail in the financial sector because they attempt to extract highly volatile, real-time numbers (like stock prices or PE ratios) from static, outdated PDF documents. 
 
 The **Wall St. AI Analyst** solves this by implementing a **Semantic Routing Architecture**. It dynamically intercepts user queries and routes them to the appropriate specialized tool: a Vector Database for deep, qualitative 10-K analysis, or a live financial API for quantitative, real-time trading metrics.
+
+## 📂 Repository Structure
+```text
+financial-ai-agent/
+│
+├── app.py                                 # The final Streamlit application & routing logic
+├── nasdaq-listed.csv                      # Universe of supported tickers for Market Data
+├── requirements.txt                       # Explicit dependencies for deployment
+│
+├── evaluation/                            
+│   ├── phase3_validation_set.csv          # Synthetic evaluation questions & contexts
+│   └── phase3_ragas_scores_adjusted.csv   # Final Ragas scores correcting for honest refusals
+│
+├── notebooks/                             
+│   └── Financial_Agent_Architecture.ipynb # Complete logic, architecture, and Ragas evaluation flow
+│
+└── README.md                              # Project documentation
+```
 
 🏗️ System Architecture & Engineering Decisions
 -----------------------------------------------
